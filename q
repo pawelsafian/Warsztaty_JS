@@ -1,0 +1,34 @@
+[1mdiff --git a/css/style.css b/css/style.css[m
+[1mindex f995f30..6fe48ec 100644[m
+[1m--- a/css/style.css[m
+[1m+++ b/css/style.css[m
+[36m@@ -47,7 +47,7 @@[m [mnav {[m
+ }[m
+ [m
+ .dropdown {[m
+[31m-  display: block;[m
+[32m+[m[32m  display: none;[m
+   background-color: #fff;[m
+   border-radius: 0 .0 .5rem .5rem;[m
+   position: absolute;[m
+[36m@@ -191,7 +191,7 @@[m [mnav {[m
+ }[m
+ [m
+ .plan-description p {[m
+[31m-  font-size: 1.15 rem;[m
+[32m+[m[32m  font-size:  2rem;[m
+   color: #c8cdd1;[m
+   margin-top: 4rem;[m
+   font-weight: 700;[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 8f40951..41bff09 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -8,6 +8,7 @@[m
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">[m
+     <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700|Montserrat:400,600,700&amp;subset=latin-ext" rel="stylesheet">[m
+     <link rel="stylesheet" href="css/style.css">[m
+[32m+[m[32m    <script src="js/app.js" type="text/javascript"> </script>[m
+   </head>[m
+   <body>[m
+     <header>[m
