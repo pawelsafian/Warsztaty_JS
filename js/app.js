@@ -41,4 +41,31 @@ document.addEventListener('DOMContentLoaded', function() {
   ButtonToTop.addEventListener('click', function() {
   window.scroll(0,0);
   });
+
+  var items = document.querySelectorAll('.org');
+  var dots = document.querySelectorAll('.dot');
+  var indexClicked;
+
+  for (var i = 0; i < dots.length; i++) {
+    dots[i].addEventListener('click', function() {
+      for (var i = 0; i < items.length; i++) {
+        console.log(items);
+        console.log(dots);
+        items[i].classList.remove('visible');
+        dots[i].classList.remove('active');
+      }
+
+      this.classList.add('active');
+
+      for (var i = 0; i < dots.length; i++) {
+        if (dots[i].classList.contains('active')) {
+          indexClicked = i;
+          break;
+        }
+      }
+
+      items[indexClicked].classList.add('visible');
+      console.log(indexClicked);
+    });
+  }
 });
