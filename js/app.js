@@ -26,10 +26,14 @@ document.addEventListener('DOMContentLoaded', function() {
       this.innerHTML = 'WIĘCEJ <span class="glyphicon glyphicon-chevron-down"></span>';
     }
 }
-
   // buttons[0].addEventListener('click', showHide);
 
   for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', showHide);
   }
+
+  var menuBar = document.querySelector('.navbar');
+    window.addEventListener('scroll', function() {
+    menuBar.style.borderBottom = '4px solid red';
+  });
 });
