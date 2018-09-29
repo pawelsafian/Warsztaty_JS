@@ -36,4 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
     menuBar.style.borderBottom = '4px solid red';
   });
+
+  var ButtonToTop = document.getElementById('GoToTop');
+  ButtonToTop.addEventListener('click', function() {
+  window.scroll(0,0);
+  });
 });
